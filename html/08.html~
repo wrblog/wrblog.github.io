@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+       <head>
+                 <meta charset="utf-8">
+                 <title>xin de wang ye 
+                 </title>
+                <script type="text/javascript">
+                function allowdrop(ev)
+                   {ev.preventdefault ();}
+                   function drag(ev)
+                   {ev.datatransfer.setdata("text",ev.target.id);}
+                   function drop(ev ){ev.preventdefault();var data=ev.datatransfer.getdata("text");ev.target.appendchild(document.getelementbyid(data));}
+                   </script>
+       </head>
+ 
+        <body>
+                    <div id="div1"  ondrop="drop(event)"ondragover="allowdrop(event)"></div>
+                    <img  id="drag1"src="img_logo.gif" draggable="true"ondragstart="drag(event)" width="336" height="69"/>
+ 	rfgvfddfcffvsa
+        </body>
+
+</html>
